@@ -12,10 +12,6 @@ p
     font-weight: 300;
     color: #111;
 }
-body
-{
-    min-height: 1000px;
-}
 .banner
 {
     position: relative;
@@ -79,13 +75,22 @@ header
     align-items: center;
     transition: 0.5s;
 }
-
+header.sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
 header .logo
 {
     color: #fff;
     text-decoration: none;
     font-weight: 700;
     font-size: 2em;
+}
+header.sticky .logo
+{
+    color: #111;
 }
 header .logo span
 {
@@ -106,4 +111,12 @@ header .navigation li a
     text-decoration: none;
     color: #fff;
     font-weight: 300;
+}
+header.sticky .navigation li a
+{
+    color: #111;
+}
+header .navigation li a:hover
+{
+    color: #ff0157;
 }

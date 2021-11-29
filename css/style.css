@@ -12,7 +12,10 @@ p
     font-weight: 300;
     color: #111;
 }
-
+body
+{
+    min-height: 1000px;
+}
 .banner
 {
     position: relative;
@@ -60,4 +63,47 @@ p
 .btn:hover
 {
     letter-spacing: 6px;
+}
+
+/* Header */
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header .logo
+{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2em;
+}
+header .logo span
+{
+    color: #ff0157;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
 }

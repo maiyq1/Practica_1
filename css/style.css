@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth; /*scroll suave*/
 }
 
 p
@@ -119,4 +120,49 @@ header.sticky .navigation li a
 header .navigation li a:hover
 {
     color: #ff0157;
+}
+
+/* Sections in General */
+section
+{
+    padding: 100px;
+}
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .co150
+{
+    position: relative;
+    width: 40%;
+}
+.titleText
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span
+{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .co150 .img8x
+{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+.row .co150 .img8x img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
